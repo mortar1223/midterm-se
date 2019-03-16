@@ -1,10 +1,12 @@
 class Buyer {
 	String name;
 	int age;
+	String address;
 
-	public Buyer(String name, int age){
+	public Buyer(String name, int age, String address){
 		this.name = name;
 		this.age = age;
+		this.address = address;
 	}
 
 	public String getName(){
@@ -21,5 +23,13 @@ class Buyer {
 
 	public void setAge(int age){
 		this.age = age;
+	}
+
+	public String getAddress(){
+		return address;
+	}
+
+	public void setAddress(String address){
+		this.address = address;
 	}
 }

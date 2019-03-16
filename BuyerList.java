@@ -15,4 +15,13 @@ class BuyerList {
 			}
 		}
 	}
+
+	public void changeAddressBuyerByName(String name, String address){
+		for(int i = 0; i < buyers.size(); i++){
+			if(buyers.get(i).getName() == name){
+				buyers.get(i).setAddress(address);
+				return;
+			}
+		}
+	}
 }
