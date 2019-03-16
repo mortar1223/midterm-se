@@ -17,7 +17,7 @@ class MovieList {
 
 	public void changeMoviePriceByName(String movie, double price){
 		for(int i = 0; i < movies.size(); i++){
-			if(movies.get(i).getName() == name){
+			if(movies.get(i).getName().equals(movie)){
 				movies.get(i).setPrice(price);
 				return;
 			}
